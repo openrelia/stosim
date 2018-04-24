@@ -1,0 +1,4 @@
+useDynLib(stosim)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+importFrom(tcltk2)
