@@ -146,7 +146,7 @@ durationQ.push_back(RandVals(rPtr(ee),ee*2+1));
 oplineQ.push_back(OpLine_Vec(ee));
 eidQ.push_back(Event_ID_Vec(ee));
 eeQ.push_back(ee);
-rPtr(ee)=rPtr(ee)++;
+rPtr(ee)=rPtr(ee)+1;
 }else{
 		// this could be larger than any we've seen yet
 if(RandVals(rPtr(ee),ee*2)>timeQ(timeQ.size()-1))  {
@@ -155,7 +155,7 @@ durationQ.push_back(RandVals(rPtr(ee),ee*2+1));
 oplineQ.push_back(OpLine_Vec(ee));
 eidQ.push_back(Event_ID_Vec(ee));
 eeQ.push_back(ee);
-rPtr(ee)=rPtr(ee)++;
+rPtr(ee)=rPtr(ee)+1;
 }else{
 
 iPtr=0;
@@ -170,7 +170,7 @@ durationQ.insert(iPtr,RandVals(rPtr(ee),ee*2+1));
 oplineQ.insert(iPtr,OpLine_Vec(ee));
 eidQ.insert(iPtr,Event_ID_Vec(ee));
 eeQ.insert(iPtr,ee);
-rPtr(ee)=rPtr(ee)++;
+rPtr(ee)=rPtr(ee)+1;
 }
 }
 }
@@ -201,7 +201,7 @@ durationQ.push_back(RandVals(rPtr(ee),ee*2+1));
 oplineQ.push_back(OpLine_Vec(ee));
 eidQ.push_back(Event_ID_Vec(ee));
 eeQ.push_back(ee);
-rPtr(ee)=rPtr(ee)++;
+rPtr(ee)=rPtr(ee)+1;
 }else{
 
 iPtr=0;
@@ -216,7 +216,7 @@ durationQ.insert(iPtr,RandVals(rPtr(ee),ee*2+1));
 oplineQ.insert(iPtr,OpLine_Vec(ee));
 eidQ.insert(iPtr,Event_ID_Vec(ee));
 eeQ.insert(iPtr,ee);
-rPtr(ee)=rPtr(ee)++;
+rPtr(ee)=rPtr(ee)+1;
 }
 
 		// We should be done now the while test will
