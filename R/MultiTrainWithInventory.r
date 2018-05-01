@@ -33,8 +33,10 @@ if(ProgRpt==TRUE)  {
 		    NumTrains<-ncol(model)-3				
 		Constraints<-c(CapacityHrs,ReserveHrs,RefillTime, DischargeCap,TurndownLimit,TurndownTime,NumTrains)				
 		    				
-		    ## this is the call to the C++ dll in the stosim library				
-		      RcppList<-.Call("MultiTrainWithInventory",TimeVec, DurationVec, GenRate, Constraints, PACKAGE="stosim")				
+## this is the old call to unregistered C++ code in the stosim library				
+#		      RcppList<-.Call("MultiTrainWithInventoryCPP",TimeVec, DurationVec, GenRate, Constraints, PACKAGE="stosim")				
+## this is the new call to registered C++ functions in stosim
+		      RcppList<-.Call(MultiTrainWithInventoryCPP,TimeVec, DurationVec, GenRate, Constraints)				
 		   				
 		    lastline<-match(max(RcppList[[1]][,1]),RcppList[[1]][,1])				
 		    RcppList[[1]]<-RcppList[[1]][1:lastline,]				

@@ -1,7 +1,7 @@
   // SimulatioinHistory.cpp file
  /*
- * Author: Jacob T. Ormerod
- *         (c) 2014 OpenReliability.org
+ * Author: David Silkworth
+ *         (c) 2011-2018 OpenReliability.org
  */
 
 

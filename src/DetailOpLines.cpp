@@ -1,12 +1,12 @@
 ﻿// DetailOpLines.cpp file
 /*
-* Author: Jacob Ormerod
-* (c) 2011-2014 OpenReliability.org
+* Author: David Silkworth
+* (c) 2011-2018 OpenReliability.org
 */
 #include <R.h>
 #include <Rcpp.h>
 #include "stosim.h"
-SEXP DetailOpLines(SEXP arg1, SEXP arg2, SEXP arg3,
+SEXP DetailOpLinesCPP(SEXP arg1, SEXP arg2, SEXP arg3,
 SEXP arg4)
 { using namespace Rcpp;
 Rcpp::NumericVector TimesVec(arg1);

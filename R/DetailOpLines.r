@@ -2,7 +2,7 @@
  ## DetailOplines.r file				
  ##				
  ## Author: Jacob Ormerod				
- ##        ( c ) 2011-2014 OpenReliability.org				
+ ##        ( c ) 2011-2018 OpenReliability.org				
 ##				
 				
  DetailOpLines<-function(Model,Names=NULL, ProgRpt=FALSE)  {				
@@ -69,8 +69,10 @@ for(p in 1:Pages)  {
 		TimesVec<-c(TimesVec,Model[[df]]$Time[thisPageStarts[df]:(nextPage-1)])		
 	}			
 				
-## this is the call to the C++ dll in the stosim library				
-  fun_DF<-.Call("DetailOpLines",TimesVec, DurationsVec, LengthsVec, Names , PACKAGE="stosim")				
+## this is the old call to the unregistered C++ code in the stosim library				
+#  fun_DF<-.Call("DetailOpLinesCPP",TimesVec, DurationsVec, LengthsVec, Names , PACKAGE="stosim")				
+## this is the new call to the registered C++ function in stosim
+  fun_DF<-.Call(DetailOpLinesCPP,TimesVec, DurationsVec, LengthsVec, Names)				
 			
 	  RcppDF<-fun_DF			
   			

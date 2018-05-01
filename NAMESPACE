@@ -1,4 +1,10 @@
-useDynLib(stosim)
-exportPattern("^[[:alpha:]]+")
+useDynLib(stosim,.registration = TRUE)
+
 importFrom(Rcpp, evalCpp)
-importFrom(tcltk2)
+importFrom(tcltk,  'tkProgressBar', 'setTkProgressBar')
+export(
+DetailOpLines,
+EventElement,
+MultiTrainWithInventory,
+SimHistory
+)

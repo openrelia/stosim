@@ -1,7 +1,7 @@
 // stosim.h file
  /*
- * Author: Jacob T. Ormerod
- *         (c) 2014 OpenReliability.org
+ * Author: David Silkworth
+ *         (c) 2011-2018 OpenReliability.org
  */
 
 #ifndef _stosim_H
@@ -24,14 +24,14 @@ RcppExport  SEXP SimulationHistory(SEXP arg1, SEXP arg2, SEXP arg3,
       SEXP arg4,  SEXP arg5, SEXP arg6,
         SEXP arg7,  SEXP arg8);
         
-   RcppExport  SEXP DetailOpLines(SEXP arg1, SEXP arg2, SEXP arg3,
+   RcppExport  SEXP DetailOpLinesCPP(SEXP arg1, SEXP arg2, SEXP arg3,
       SEXP arg4); 
       
    RcppExport  SEXP MultiTrainSingleBU4a(SEXP arg1, SEXP arg2, SEXP arg3,
       SEXP arg4,  SEXP arg5, SEXP arg6,
         SEXP arg7,  SEXP arg8);
 
-   RcppExport  SEXP MultiTrainWithInventory(SEXP arg1, SEXP arg2, SEXP arg3,
+   RcppExport  SEXP MultiTrainWithInventoryCPP(SEXP arg1, SEXP arg2, SEXP arg3,
       SEXP arg4); 		
 
 #endif

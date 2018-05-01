@@ -79,12 +79,17 @@ for(p in 1:Pages)  {
 	## use this set.seed to establish the ring.kind for the Rcpp call			
 	RNGkind(kind=thisRNGkind)			
 				
-  ## this is the call to the C++ code in the stosim library				
-  fun_out<-.Call("SimulationHistory",				
+ ## this is the old call to the unregistered C++ code in the stosim library				
+#  fun_out<-.Call("SimulationHistory",				
+#    OpLine_Vec, Event_ID_Vec, FD_Vec, FP1_Vec, FP2_Vec,				
+#    FP3_Vec, RD_Vec, RP1_Vec, RP2_Vec, RP3_Vec, Seed_Vec,				
+#    SimulationYearsPerPage, PACKAGE="stosim")
+## this is the new call to the registered C++ code in stosim				
+  fun_out<-.Call(SimulationHistory,				
     OpLine_Vec, Event_ID_Vec, FD_Vec, FP1_Vec, FP2_Vec,				
     FP3_Vec, RD_Vec, RP1_Vec, RP2_Vec, RP3_Vec, Seed_Vec,				
-    SimulationYearsPerPage, PACKAGE="stosim")				
-				
+    SimulationYearsPerPage)
+	
 	Page<-rep(p,length(fun_out[,1]))			
 	PageCol<-data.frame(Page)			
 	fun_out<-cbind(PageCol,fun_out)			

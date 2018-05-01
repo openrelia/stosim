@@ -1,7 +1,7 @@
 // MultiTrainWithInventory.cpp file
  /*
- * Author: Jacob T. Ormerod
- *         (c) 2014 OpenReliability.org
+ * Author: David Silksorth
+ *         (c) 2014-2018 OpenReliability.org
  */
 
 
@@ -10,7 +10,7 @@
 #include "stosim.h"
 
 
- SEXP MultiTrainWithInventory(SEXP arg1, SEXP arg2, SEXP arg3, SEXP arg4){
+ SEXP MultiTrainWithInventoryCPP(SEXP arg1, SEXP arg2, SEXP arg3, SEXP arg4){
 
 using namespace Rcpp;
 //	src <- '

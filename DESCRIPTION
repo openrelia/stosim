@@ -1,14 +1,14 @@
 Package: stosim
 Type: Package
 Title: Stochastic Simulator for Reliability Modeling of Repairable Systems
-Version: 0.0.13
-Date: 2018-4-27
-Author: Jacob T. Ormerod
-Maintainer: Jacob T. Ormerod <jake@openreliability.org>
+Version: 0.0.14
+Date: 2018-4-30
+Authors@R: c(person("David", "Silkworth", email = "djsilk@openreliability.org", role = "aut"), person("Jacob", "Ormerod", email = "jake@openreliability.org", role = "cre"), person("OpenReliability.org", role = "cph"))
 Description: A toolkit for Reliability Availability and Maintainability (RAM) modeling of industrial process systems.
-License: GPL (>= 2)
+License: GPL (>=3)
+Copyright: copyright (c) OpenReliability.org 2011-2018
 LazyLoad: yes
 Imports: Rcpp (>= 0.11.1)
-Depends: tcltk2
+Depends: tcltk
 LinkingTo: Rcpp
 
