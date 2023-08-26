@@ -1,8 +1,8 @@
 Package: stosim
 Type: Package
 Title: Stochastic Simulator for Reliability Modeling of Repairable Systems
-Version: 0.0.14
-Date: 2018-5-1
+Version: 0.0.15
+Date: 2023-8-26
 Authors@R: c(person("David", "Silkworth", email = "djsilk@openreliability.org", role = "aut"), person("Jacob", "Ormerod", email = "jake@openreliability.org", role = "cre"), person("OpenReliability.org", role = "cph"))
 Description: A toolkit for Reliability Availability and Maintainability (RAM) modeling of industrial process systems.
 License: GPL (>=3)
