@@ -7,6 +7,7 @@ Authors@R: c(person("David", "Silkworth", email = "djsilk@openreliability.org", 
 Description: A toolkit for Reliability Availability and Maintainability (RAM) modeling of industrial process systems.
 License: GPL (>=3)
 Copyright: copyright (c) OpenReliability.org 2011-2018
+LazyData: yes
 LazyLoad: yes
 Imports: Rcpp (>= 0.11.1)
 Depends: tcltk
