@@ -1,5 +1,5 @@
 \name{stosim-package}
- \alias{stosim-package}
+\alias{stosim-package}
 \docType{package}
 \title{
 Stochastic Simulator for Reliability Modeling of Repairable Systems
